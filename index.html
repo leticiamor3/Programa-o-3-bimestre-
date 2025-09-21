@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Wolverine — meu cachorrinho</title>
+  <meta name="description" content="Site acessível inspirado no modelo, dedicado ao Wolverine, meu cachorrinho.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topo">
+    <div class="container">
+      <h1 class="logo" aria-label="Logotipo Wolverine">🐾 Wolverine</h1>
+      <nav class="menu" aria-label="Navegação principal">
+        <a href="#inicio">Início</a>
+        <a href="#galeria">Galeria</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="barra-acessibilidade" aria-label="Acessibilidade">
+    <div class="container acess-wrap">
+      <span class="rotulo">Acessibilidade:</span>
+      <button id="aumentar">A+</button>
+      <button id="diminuir">A-</button>
+      <div id="live" class="sr-only" aria-live="polite"></div>
+    </div>
+  </section>
+
+  <main id="inicio">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-texto">
+          <p class="bemvindo">Bem-vindo ao</p>
+          <h2>Wolverine, meu cachorrinho</h2>
+          <p class="lead">Companheiro nascido em <strong>13/06/2018</strong> e adotado em <strong>19/07</strong>. Aqui você encontra nossa história e fotos fofas.</p>
+          <a class="btn" href="#galeria">Ver galeria</a>
+        </div>
+        <div class="hero-foto" aria-hidden="true">
+          <img src="imagens/wolverine-1.jpg" alt="">
+        </div>
+      </div>
+    </section>
+
+    <section class="container bloco">
+      <h3>Ter um animal na nossa vida</h3>
+      <p>Ter um cachorro é ganhar rotina, afeto e parceria. O Wolverine trouxe alegria para os dias comuns, motivação para passeios e uma amizade que não falha. É a presença que transforma a casa em lar — desde 19/07, quando adotamos esse carinha nascido em 13/06/2018.</p>
+    </section>
+
+    <section id="galeria" class="container bloco">
+      <h3>Galeria</h3>
+      <div class="grade">
+        <figure><img src="imagens/wolverine-1.jpg" alt="Wolverine com gravatinha, olhar atento."><figcaption>Elegante</figcaption></figure>
+        <figure><img src="imagens/wolverine-2.jpg" alt="Wolverine sorrindo atrás do portão."><figcaption>Guardião feliz</figcaption></figure>
+        <figure><img src="imagens/wolverine-3.jpg" alt="Wolverine deitado após a brincadeira, língua de fora."><figcaption>Depois da brincadeira</figcaption></figure>
+        <figure><img src="imagens/wolverine-4.jpg" alt="Wolverine com tema natalino e gravata."><figcaption>Espírito natalino</figcaption></figure>
+        <figure><img src="imagens/wolverine-5.jpg" alt="Close do Wolverine com focinho em destaque."><figcaption>Close fofo</figcaption></figure>
+        <figure><img src="imagens/wolverine-6.jpg" alt="Wolverine filhote descansando."><figcaption>Pequeno Wolverine</figcaption></figure>
+      </div>
+    </section>
+
+    <section id="contato" class="container bloco">
+      <h3>Contato</h3>
+      <form class="form" onsubmit="event.preventDefault(); alert('Mensagem enviada!');">
+        <label>Nome <input required type="text"></label>
+        <label>E‑mail <input required type="email"></label>
+        <label>Mensagem <textarea required rows="4"></textarea></label>
+        <button type="submit" class="btn">Enviar</button>
+      </form>
+      <p class="creditos">Site feito por <strong>Leticia Francine Moraes</strong> — trabalho 3º bimestre — Programação.</p>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <div class="container">
+      <p>© 2025 Wolverine — meu cachorrinho.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
